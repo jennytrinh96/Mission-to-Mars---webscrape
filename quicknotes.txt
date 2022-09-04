@@ -1,0 +1,33 @@
+** Scrape https://redplanetscience.com/
+	** Collect the latest News Title and Paragraph Text (assign to variables for use later)
+
+# Example:
+news_title = "NASA's Next Mars Mission to Investigate Interior of Red Planet"
+
+news_p = "Preparation of NASA's next spacecraft to Mars, InSight, has ramped up this summer, 
+on course for launch next May from Vandenberg Air Force Base in central California -- 
+the first interplanetary launch in history from America's West Coast."
+
+-------------------------------------------------------------------------------------------------
+
+** https://spaceimages-mars.com/
+
+** Use splinter to navigate site and find image URL for current Featured Mars Image
+	** assign URL to variable called 'featured_image_url'
+	** Note: Image has to be full-sized .jpg
+	** Save complete URL string for this image
+
+# Example:
+featured_image_url = 'https://spaceimages-mars.com/image/featured/mars2.jpg'
+
+-------------------------------------------------------------------------------------------------
+
+** https://galaxyfacts-mars.com/
+
+** Use Pandas to scrape table containing facts about the planet i.e. diameter, mass, etc. 
+** Use Pandas to convert data to HTML table string
+
+-------------------------------------------------------------------------------------------------
+
+
+
