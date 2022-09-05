@@ -1,3 +1,6 @@
+Part 1: Scrape
+
+
 ** Scrape https://redplanetscience.com/
 	** Collect the latest News Title and Paragraph Text (assign to variables for use later)
 
@@ -28,6 +31,44 @@ featured_image_url = 'https://spaceimages-mars.com/image/featured/mars2.jpg'
 ** Use Pandas to convert data to HTML table string
 
 -------------------------------------------------------------------------------------------------
+
+** https://marshemispheres.com/
+
+** Click each of the links to the hemispheres in order to find the image URL to the full-resolution image
+** Save the image URL string for the full resolution hemisphere image and the hemisphere title containing the hemisphere name
+** Python dictionary to store the data using the keys `img_url` and `title`
+** Append the dictionary with the image URL string and the hemisphere title to a list
+	** list will contain one dictionary for each hemisphere
+
+# Example:
+hemisphere_image_urls = [
+    {"title": "Valles Marineris Hemisphere", "img_url": "..."},
+    {"title": "Cerberus Hemisphere", "img_url": "..."},
+    {"title": "Schiaparelli Hemisphere", "img_url": "..."},
+    {"title": "Syrtis Major Hemisphere", "img_url": "..."},
+]
+
+-------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
+
+Part 2: Flask and MongoDB
+** Use MongoDB with Flask templating to create a new HTML page that displays all the 
+information that was scraped from the URLs above. **
+
+
+
+** Convert your Jupyter notebook into a Python script called `scrape_mars.py` by using a function called `scrape`
+	** This function should execute all your scraping code from above and 
+	return one Python dictionary containing all the scraped data. **
+
+** Create a route called `/scrape` that will import your `scrape_mars.py` script and call your `scrape` function
+	** Store the return value in Mongo as a Python dictionary
+
+** Create a root route `/` that will query your Mongo database and pass the Mars data into an 
+HTML template for displaying the data
+
+** Create a template HTML file called `index.html` that will take the Mars data dictionary and 
+display all the data in the appropriate HTML elements
 
 
 
