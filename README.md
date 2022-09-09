@@ -36,5 +36,4 @@ The purpose of this challenge is to demonstrate web scraping skills from various
 
 
 ### Results: Screenshots
-
-![mars_index.html](screenshots/mars_html.jpg)
+![mars_html](https://user-images.githubusercontent.com/104868749/189256199-cfee4e01-c12b-446f-9dda-c59aeefbc9e3.jpg)
